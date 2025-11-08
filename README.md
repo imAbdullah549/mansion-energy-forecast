@@ -15,19 +15,22 @@ Evaluation follows strict time splits: Train, Test, and three seasonal Eval wind
 
 ## 📂 Project structure
 
-├─ data_raw/ # put original CSV here (not committed)
-├─ data_proc/ # generated: clean & feature tables
-├─ artifacts/ # generated: scaler, feature list
-├─ preds/ # model predictions (CSV)
-├─ reports/ # results & figures
+```text
+.
+├─ data_raw/                  # put original CSV here (not committed)
+├─ data_proc/                 # generated: clean & feature tables
+├─ artifacts/                 # generated: scaler, feature list
+├─ preds/                     # model predictions (CSV)
+├─ reports/                   # results & figures
 ├─ src/
-│ ├─ pipeline/ # run_all / clean / features / postclean / baselines / evaluate
-│ ├─ models/ # lstm_model.py, gru_model.py, tcn_model.py, transformer_model.py
-│ └─ utils/ # shared helpers (load_splits, make_sequences)
-├─ config/ # splits.json (time windows)
-├─ notebooks/ # ad-hoc analysis (optional)
+│  ├─ pipeline/               # run_all / clean / features / postclean / baselines / evaluate
+│  ├─ models/                 # lstm_model.py, gru_model.py, tcn_model.py, transformer_model.py
+│  └─ utils/                  # shared helpers (load_splits, make_sequences)
+├─ config/                    # splits.json (time windows)
+├─ notebooks/                 # ad-hoc analysis (optional)
 ├─ requirements.txt
 └─ README.md
+
 
 
 ## 🧰 Requirements
